@@ -113,6 +113,5 @@ parsed_dictionaries = []
 for input_file in log_files:
 	parsed_dictionaries.append(parse_trimming_report(input_file))
 
-print(parsed_dictionaries)
 parsed_dataframe = pd.DataFrame(parsed_dictionaries)
 parsed_dataframe.to_csv(output_file)
